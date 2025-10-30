@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeerTech Tutoring - Tutorías entre Alumnos</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #f3f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7dff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #2e7dff;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .form-container {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #2e7dff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1a56d6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #2e7dff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PeerTech Tutoring</h1>
+    <p>Aprende con quienes ya pasaron por lo mismo</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Regístrate para participar</h2>
+      <p>Selecciona si quieres ser tutor o tutelado y completa el formulario. Nos pondremos en contacto contigo.</p>
+
+      <div class="form-container">
+        <form action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="rol">Rol:</label>
+          <select id="rol" name="rol" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Tutor">Tutor (quiero enseñar)</option>
+            <option value="Tutelado">Tutelado (quiero aprender)</option>
+          </select>
+
+          <label for="materia">Materia:</label>
+          <select id="materia" name="materia" required>
+            <option value="">Selecciona la materia</option>
+            <option value="Programación I">Programación I</option>
+            <option value="Matemáticas Discretas">Matemáticas Discretas</option>
+            <option value="Lógica de Programación">Lógica de Programación</option>
+            <option value="Cálculo Diferencial">Cálculo Diferencial</option>
+            <option value="Fundamentos de Electrónica">Fundamentos de Electrónica</option>
+          </select>
+
+          <label for="semestre">Semestre:</label>
+          <input type="number" id="semestre" name="semestre" min="1" max="10" required>
+
+          <label for="horario">Disponibilidad de horario:</label>
+          <textarea id="horario" name="horario" rows="3" placeholder="Ejemplo: Lunes y miércoles de 4 a 6 pm" required></textarea>
+
+          <label for="contacto">Medio de contacto preferido:</label>
+          <select id="contacto" name="contacto" required>
+            <option value="">Selecciona una opción</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Correo electrónico">Correo electrónico</option>
+          </select>
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+
+          <button type="submit">Enviar Registro</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PeerTech Tutoring | Universidad Autónoma del Estado de México</p>
+  </footer>
+</body>
+</html>

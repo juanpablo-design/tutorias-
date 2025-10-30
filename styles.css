@@ -1,0 +1,129 @@
+/* ============================
+   Estilos principales PeerTech Tutoring
+   ============================ */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #2e7dff;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+h2 {
+  color: #2e7dff;
+  font-size: 1.7em;
+  margin-top: 0;
+}
+
+/* ---------- FORMULARIO ---------- */
+.form-container {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1b1b1b;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2e7dff;
+  box-shadow: 0 0 4px rgba(46, 125, 255, 0.3);
+  outline: none;
+}
+
+button {
+  background-color: #2e7dff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #1b5edb;
+  transform: scale(1.02);
+}
+
+/* ---------- SECCIÓN DE INFORMACIÓN ---------- */
+section p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #2e7dff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  margin-top: 50px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    width: 100%;
+  }
+}

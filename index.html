@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeerTech Tutoring - Registro de Tutorías</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>PeerTech Tutoring</h1>
+    <p>Conecta, aprende y enseña entre compañeros de Ingeniería en Software</p>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section>
+      <h2>Formulario de Registro</h2>
+      <p>Completa el siguiente formulario para participar en el programa de tutorías entre alumnos.</p>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="form-container">
+      <form action="#" method="post">
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Juan Pérez López" required>
+
+        <!-- Correo -->
+        <label for="correo">Correo institucional:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ejemplo: juanperez@alumno.uaemex.mx" required>
+
+        <!-- Rol -->
+        <label for="rol">Rol que deseas asumir:</label>
+        <select id="rol" name="rol" required>
+          <option value="">Selecciona una opción</option>
+          <option value="tutor">Tutor (enseñar a otros alumnos)</option>
+          <option value="tutelado">Tutelado (recibir apoyo académico)</option>
+        </select>
+
+        <!-- Semestre -->
+        <label for="semestre">Semestre actual:</label>
+        <select id="semestre" name="semestre" required>
+          <option value="">Selecciona tu semestre</option>
+          <option value="1">1°</option>
+          <option value="2">2°</option>
+          <option value="3">3°</option>
+          <option value="4">4°</option>
+          <option value="5">5°</option>
+          <option value="6">6°</option>
+          <option value="7">7°</option>
+          <option value="8">8°</option>
+          <option value="9">9°</option>
+        </select>
+
+        <!-- Materia de interés -->
+        <label for="materia">Materia o tema de apoyo:</label>
+        <input type="text" id="materia" name="materia" placeholder="Ejemplo: Programación en C++, Bases de Datos..." required>
+
+        <!-- Disponibilidad -->
+        <label for="horario">Disponibilidad horaria:</label>
+        <input type="text" id="horario" name="horario" placeholder="Ejemplo: Lunes y miércoles de 2 a 4 p.m." required>
+
+        <!-- Descripción -->
+        <label for="descripcion">Describe brevemente tu experiencia o necesidad:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" placeholder="Ejemplo: Tengo experiencia explicando estructuras de datos o necesito reforzar fundamentos de programación."></textarea>
+
+        <!-- Botón -->
+        <button type="submit">Enviar Registro</button>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 PeerTech Tutoring - Universidad Autónoma del Estado de México</p>
+  </footer>
+
+</body>
+</html>
